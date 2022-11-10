@@ -1,0 +1,23 @@
+{
+  "name": "projeto_web_bootstrap",
+  "version": "1.0.0",
+  "description": "Frontend de um sistema de pizzaria",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarolineFMelo/Projeto_web_bootstrap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarolineFMelo/Projeto_web_bootstrap/issues"
+  },
+  "homepage": "https://github.com/CarolineFMelo/Projeto_web_bootstrap#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "font-awesome": "^4.7.0"
+  }
+}
