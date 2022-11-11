@@ -17,11 +17,11 @@ npm install
 Then run the server
 
 ```powershell
-npm run serve
+npm run server
 ```
 
 Or if you have nodemon
 
 ```powershell
-npm run servemon
+npm run servermon
 ```
