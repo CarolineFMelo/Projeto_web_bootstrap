@@ -8,6 +8,43 @@
     <title>Pizzaria</title>
   </head>
   <body>
+    <main class="container">
+      <section class="bg-light p-4 rounded text-center">
+        <img src="./img/logo-pizzaria.png" class="mx-auto" height="200" alt="Logo Pizzaria" />
+        <hr />
+        <p>Utilize as opções disponíveis abaixo para selecionar seus produtos e realizar seu pedido</p>
+        <button class="btn btn-primary">Acompanhe seu pedido</button>
+      </section>
+      <form action="">
+        <div class="card my-2">
+          <div class="card-header"><span class="badge bg-primary">1</span> Escolha os produtos</div>
+          <div class="p-4 d-flex flex-column flex-md-row justify-content-between">
+            <div class="col col-md-5">
+              <label for="produto" class="form-label">* Selecione um produto:</label>
+              <select class="form-select" id="produto">
+                <option selected>---</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="col col-md-3">
+              <label for="quantidade" class="form-label">* Quantidade:</label>
+              <input type="number" class="form-control" id="quantidade" placeholder="1" min="1" max="99" />
+            </div>
+            <div class="col col-md-3 mt-4 mt-md-0 d-flex align-items-end">
+              <button class="w-100 btn btn-primary">Adicionar</button>
+            </div>
+          </div>
+        </div>
+        <div class="card my-2">
+          <div class="card-header"><span class="badge bg-primary">2</span> Produtos do seu pedido</div>
+        </div>
+        <div class="card my-2">
+          <div class="card-header"><span class="badge bg-primary">3</span> Informações Adicionais</div>
+        </div>
+      </form>
+    </main>
     <script src="./popperjs/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
   </body>
