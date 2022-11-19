@@ -9,6 +9,7 @@ let app = express();
 app.use('/css', express.static(path.join(__dirname, 'node_modules/bootstrap/dist/css')));
 app.use('/js', express.static(path.join(__dirname, 'node_modules/bootstrap/dist/js')));
 app.use('/popperjs', express.static(path.join(__dirname, 'node_modules/@popperjs/core/dist/umd')));
+app.use('/img', express.static(path.join(__dirname, 'src/img/')));
 
 app.get('/', (req, res) => {
     res.statusCode = 200;
