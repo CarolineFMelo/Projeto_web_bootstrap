@@ -8,14 +8,19 @@
     <title>Pizzaria</title>
   </head>
   <body>
-    <main class="container">
+    <!-- Header com informacoes da pizzaria -->
+    <!-- Layout do botao nao esta funcionando  -->
+    <header class="container">
       <section class="bg-light p-4 rounded text-center">
         <img src="./img/logo-pizzaria.png" class="mx-auto" height="200" alt="Logo Pizzaria" />
         <hr />
         <p>Utilize as opções disponíveis abaixo para selecionar seus produtos e realizar seu pedido</p>
         <button class="btn btn-primary">Acompanhe seu pedido</button>
       </section>
+    </header>
+    <main class="container">
       <form action="">
+        <!-- Card com cardapio da pizzaria -->
         <div class="card my-2">
           <div class="card-header"><span class="badge bg-primary">1</span> Escolha os produtos</div>
           <div class="p-4 d-flex flex-column flex-md-row justify-content-between">
@@ -34,9 +39,12 @@
             </div>
           </div>
         </div>
+        <!-- Card Com a tabela -->
+        <!-- Adicionar tabela -->
         <div class="card my-2">
           <div class="card-header"><span class="badge bg-primary">2</span> Produtos do seu pedido</div>
         </div>
+        <!-- Cardo com as informacoes do cliente -->
         <div class="card my-2">
           <div class="card-header"><span class="badge bg-primary">3</span> Informações Adicionais</div>
           <div class="p-4 d-flex flex-column">
@@ -102,6 +110,7 @@
           </div>
         </div>
       </form>
+      <!-- Card com o codigo do pedido -->
       <div class="card my-2">
         <div class="card-header"><span class="badge bg-primary">4</span> Finalização</div>
         <div class="bg-success bg-opacity-25 p-3 m-3 rounded text-center text-success">
