@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <title>Pizzaria</title>
+    <style>
+      @media (min-width: 768px) {
+        .btn-header {
+          position: absolute;
+        }
+      }
+    </style>
+  </head>
+  <body class="container">
+    <!-- Header com informacoes da pizzaria -->
+    <header class="position-relative">
+      <section class="bg-light p-4 rounded text-center">
+        <img src="./img/logo-pizzaria.png" class="mx-auto" height="200" alt="Logo Pizzaria" />
+        <hr />
+        <p>Utilize as opções disponíveis abaixo para selecionar seus produtos e realizar seu pedido</p>
+        <button class="btn btn-header btn-primary top-0 end-0 mt-md-4 me-md-4">Acompanhe seu pedido</button>
+      </section>
+    </header>
+    <main>
+      <form action="">
+        <!-- Card com cardapio da pizzaria -->
+        <div class="card my-2">
+          <div class="card-header"><span class="badge bg-primary">1</span> Escolha os produtos</div>
+          <div class="p-4 d-flex flex-column flex-md-row justify-content-between">
+            <div class="col col-md-5">
+              <label for="produto" class="form-label">* Selecione um produto:</label>
+              <select class="form-select" id="produto">
+                <option selected>---</option>
+              </select>
+            </div>
+            <div class="col col-md-3">
+              <label for="quantidade" class="form-label">* Quantidade:</label>
+              <input type="number" class="form-control" id="quantidade" placeholder="1" min="1" max="99" />
+            </div>
+            <div class="col col-md-3 mt-4 mt-md-0 d-flex align-items-end">
+              <button class="w-100 btn btn-primary">Adicionar</button>
+            </div>
+          </div>
+        </div>
+        <!-- Card Com a tabela -->
+        <!-- Adicionar tabela -->
+        <div class="card my-2">
+          <div class="card-header"><span class="badge bg-primary">2</span> Produtos do seu pedido</div>
+        </div>
+        <!-- Cardo com as informacoes do cliente -->
+        <div class="card my-2">
+          <div class="card-header"><span class="badge bg-primary">3</span> Informações Adicionais</div>
+          <div class="p-4 d-flex flex-column">
+            <div class="col d-flex">
+              <div class="col my-2">
+                <label for="nome" class="form-label">* Nome Completo:</label>
+                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" />
+              </div>
+            </div>
+            <div class="col d-flex flex-column flex-md-row">
+              <div class="col me-md-4 my-2">
+                <label for="email" class="form-label">* E-mail:</label>
+                <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" />
+              </div>
+              <div class="col my-2">
+                <label for="telefone" class="form-label">* Telefone:</label>
+                <input type="text" class="form-control" id="telefone" placeholder="Digite seu telefone" />
+              </div>
+            </div>
+            <div class="col d-flex flex-column flex-md-row justify-content-md-between">
+              <div class="col col-md-2 my-2">
+                <label for="cep" class="form-label">* CEP:</label>
+                <input type="text" class="form-control" id="cep" placeholder="00000-000" />
+              </div>
+              <div class="col col-md-4 my-2">
+                <label for="endereco" class="form-label">* Endereço:</label>
+                <input type="text" class="form-control" id="endereco" placeholder="..." />
+              </div>
+              <div class="col col-md-1 my-2">
+                <label for="numeroEndereco" class="form-label">* Nº:</label>
+                <input type="number" class="form-control" id="numeroEndereco" placeholder="..." />
+              </div>
+              <div class="col col-md-4 my-2">
+                <label for="complemento" class="form-label">* Complemento:</label>
+                <input type="text" class="form-control" id="complemento" placeholder="..." />
+              </div>
+            </div>
+            <div class="col d-flex flex-column flex-md-row justify-content-md-between">
+              <div class="col col-md-4 my-2">
+                <label for="bairro" class="form-label">* Bairro:</label>
+                <input type="text" class="form-control" id="bairro" placeholder="..." />
+              </div>
+              <div class="col col-md-4 my-2">
+                <label for="cidade" class="form-label">* Cidade:</label>
+                <input type="text" class="form-control" id="cidade" placeholder="..." />
+              </div>
+              <div class="col col-md-3 my-2">
+                <label for="uf" class="form-label">* Estado:</label>
+                <select class="form-select" id="uf">
+                  <option selected>--</option>
+                </select>
+              </div>
+            </div>
+            <div class="col d-flex">
+              <div class="col my-2">
+                <label for="obs" class="form-label">Observações:</label>
+                <textarea class="w-100 form-control" placeholder="Ex: por favor, colocar poucas azeitonas na pizza..." id="obs"></textarea>
+              </div>
+            </div>
+            <div class="col col-md-3 mt-2">
+              <button class="w-100 btn btn-success">Enviar Pedido</button>
+            </div>
+          </div>
+        </div>
+      </form>
+      <!-- Card com o codigo do pedido -->
+      <div class="card my-2">
+        <div class="card-header"><span class="badge bg-primary">4</span> Finalização</div>
+        <div class="bg-success bg-opacity-25 p-3 m-3 rounded text-center text-success">
+          <p>código do pedido:</p>
+          <p class="fs-1">Q5PaXtkK</p>
+          <hr />
+          <p>Seu pedido foi enviado com sucesso.</p>
+        </div>
+      </div>
+    </main>
+    <script src="./popperjs/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>
